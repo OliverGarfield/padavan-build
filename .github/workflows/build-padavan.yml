@@ -137,6 +137,8 @@ jobs:
         if [ $BUILD_VERSION == "chongshengB" ]; then
           echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=n" >> configs/templates/$TNAME.config      #simple-obfs混淆插件
           echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> configs/templates/$TNAME.config      #adbyby plus+
+          echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER=y" >> configs/templates/$TNAME.config      #softether-vpnserver
+          echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CMD=y" >> configs/templates/$TNAME.config      #softether-vpncmd
           echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=y" >> configs/templates/$TNAME.config     #阿里DDNS
           echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> configs/templates/$TNAME.config    #smartdns
           echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=y" >> configs/templates/$TNAME.config #smartdns二进制文件
